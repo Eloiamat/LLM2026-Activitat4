@@ -1,0 +1,549 @@
+
+/* ==================================================
+   1. ESTILOS GENERALES
+   ================================================== */
+
+/* Configuración general de toda la página */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: green;
+}
+
+
+/* ==================================================
+   2. CABECERA Y MENÚ DE NAVEGACIÓN
+   ================================================== */
+
+/* Contenedor de la cabecera */
+#capcelera {
+    width: 85%;
+    margin: 0 auto;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+/* Organización de los enlaces del menú */
+nav {
+    display: flex;
+    align-items: center;
+    gap: 75px;
+    margin-left: auto;
+    margin-right: 100px;
+}
+
+/* Estilo de los enlaces del menú */
+nav a {
+    color: aliceblue;
+    font-size: 3rem;
+    text-decoration: none;
+}
+
+
+/* ==================================================
+   3. PÁGINA PRINCIPAL
+   ================================================== */
+
+/* Imagen principal de portada */
+#imgPortada {
+    width: 100%;
+    height: 900px;
+    background-image: url("../img/casa_encantada.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top: 5px solid gray;
+    border-bottom: 5px solid gray;
+}
+
+/* Contenedor del texto de la página principal */
+.cuerpoHome {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Título principal de la página */
+.cuerpoHome h1 {
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 4rem;
+    color: red;
+}
+
+/* Subtítulo de la página */
+.cuerpoHome h2 {
+    margin: 0;
+    font-size: 3rem;
+    color: red;
+}
+
+
+/* ==================================================
+   4. CONTENIDO DE LAS OTRAS PÁGINAS
+   ================================================== */
+
+/* Contenedor general de las páginas secundarias */
+.cuerpoOtras {
+    background-color: white;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 0;
+    border-top: 5px solid gray;
+    border-bottom: 5px solid gray;
+}
+
+
+/* ==================================================
+   5. TABLA DE PRECIOS
+   ================================================== */
+
+/* Estilo general de la tabla */
+.tabla-precios {
+    width: 70%;
+    margin: 0 auto;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 2px solid white;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: white;
+    text-align: center;
+    box-shadow: 0 0 3px gray;
+}
+
+/* Cabecera de la tabla */
+.tabla-precios th {
+    background: linear-gradient(#617486, #405263);
+    color: white;
+    padding: 22px 10px;
+    font-size: 16px;
+    border-right: 1px solid white;
+}
+
+/* Celdas de la tabla */
+.tabla-precios td {
+    padding: 10px;
+    height: 42px;
+    font-size: 13px;
+    color: #526577;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid white;
+}
+
+/* Colores de fondo para cada tipo de habitación */
+
+/* Habitación individual */
+.tabla-precios .individual td {
+    background-color: #edf2f5;
+}
+
+/* Habitación doble */
+.tabla-precios .doble td {
+    background-color: white;
+}
+
+/* Habitación doble superior */
+.tabla-precios .superior td {
+    background-color: #edf2f5;
+}
+
+/* Habitación triple */
+.tabla-precios .triple td {
+    background-color: white;
+}
+
+/* Nombre de las habitaciones en negrita */
+.tabla-precios tbody td:first-child {
+    font-weight: bold;
+    color: black;
+}
+
+/* Tamaño y posición de las imágenes */
+.tabla-precios img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    vertical-align: middle;
+}
+
+/* Pie de la tabla */
+.tabla-precios tfoot td {
+    background: linear-gradient(#617486, #405263);
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 22px 10px;
+    border: none;
+    height: 40px;
+}
+
+/* Título de la página de precios */
+.titulo-precios {
+    font-size: 40px;
+    font-weight: normal;
+    color: black;
+    margin: 0 0 33px;
+    text-align: center;
+}
+
+/* Palabra destacada del título */
+.titulo-precios span {
+    color: blue;
+    font-weight: bold;
+}
+
+
+/* ==================================================
+   6. FORMULARIO DE RESERVA
+   ================================================== */
+
+/* Fondo de la sección de reserva */
+.reserva {
+    background-color: #e9ebed;
+}
+
+/* Contenedor del formulario */
+.reserva .formulario {
+    width: 70%;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 12px;
+}
+
+/* Títulos de los apartados */
+.reserva legend {
+    font-weight: bold;
+    color: forestgreen;
+    font-size: 19px;
+    padding: 0 10px;
+}
+
+
+/* ==================================================
+   1. ESTILOS GENERALES
+   ================================================== */
+
+/* Configuración general de toda la página */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: green;
+}
+
+
+/* ==================================================
+   2. CABECERA Y MENÚ DE NAVEGACIÓN
+   ================================================== */
+
+/* Contenedor de la cabecera */
+#capcelera {
+    width: 85%;
+    margin: 0 auto;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+/* Organización de los enlaces del menú */
+nav {
+    display: flex;
+    align-items: center;
+    gap: 75px;
+    margin-left: auto;
+    margin-right: 100px;
+}
+
+/* Estilo de los enlaces del menú */
+nav a {
+    color: aliceblue;
+    font-size: 3rem;
+    text-decoration: none;
+}
+
+
+/* ==================================================
+   3. PÁGINA PRINCIPAL
+   ================================================== */
+
+/* Imagen principal de portada */
+#imgPortada {
+    width: 100%;
+    height: 900px;
+    background-image: url("../img/casa_encantada.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top: 5px solid gray;
+    border-bottom: 5px solid gray;
+}
+
+/* Contenedor del texto de la página principal */
+.cuerpoHome {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Título principal de la página */
+.cuerpoHome h1 {
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 4rem;
+    color: red;
+}
+
+/* Subtítulo de la página */
+.cuerpoHome h2 {
+    margin: 0;
+    font-size: 3rem;
+    color: red;
+}
+
+
+/* ==================================================
+   4. CONTENIDO DE LAS OTRAS PÁGINAS
+   ================================================== */
+
+/* Contenedor general de las páginas secundarias */
+.cuerpoOtras {
+    background-color: white;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 0;
+    border-top: 5px solid gray;
+    border-bottom: 5px solid gray;
+}
+
+
+/* ==================================================
+   5. TABLA DE PRECIOS
+   ================================================== */
+
+/* Estilo general de la tabla */
+.tabla-precios {
+    width: 70%;
+    margin: 0 auto;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 2px solid white;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: white;
+    text-align: center;
+    box-shadow: 0 0 3px gray;
+}
+
+/* Cabecera de la tabla */
+.tabla-precios th {
+    background: linear-gradient(#617486, #405263);
+    color: white;
+    padding: 22px 10px;
+    font-size: 16px;
+    border-right: 1px solid white;
+}
+
+/* Celdas de la tabla */
+.tabla-precios td {
+    padding: 10px;
+    height: 42px;
+    font-size: 13px;
+    color: #526577;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid white;
+}
+
+/* Colores de fondo para cada tipo de habitación */
+
+/* Habitación individual */
+.tabla-precios .individual td {
+    background-color: #edf2f5;
+}
+
+/* Habitación doble */
+.tabla-precios .doble td {
+    background-color: white;
+}
+
+/* Habitación doble superior */
+.tabla-precios .superior td {
+    background-color: #edf2f5;
+}
+
+/* Habitación triple */
+.tabla-precios .triple td {
+    background-color: white;
+}
+
+/* Nombre de las habitaciones en negrita */
+.tabla-precios tbody td:first-child {
+    font-weight: bold;
+    color: black;
+}
+
+/* Tamaño y posición de las imágenes */
+.tabla-precios img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    vertical-align: middle;
+}
+
+/* Pie de la tabla */
+.tabla-precios tfoot td {
+    background: linear-gradient(#617486, #405263);
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 22px 10px;
+    border: none;
+    height: 40px;
+}
+
+/* Título de la página de precios */
+.titulo-precios {
+    font-size: 40px;
+    font-weight: normal;
+    color: black;
+    margin: 0 0 33px;
+    text-align: center;
+}
+
+/* Palabra destacada del título */
+.titulo-precios span {
+    color: blue;
+    font-weight: bold;
+}
+
+
+/* ==================================================
+   6. FORMULARIO DE RESERVA
+   ================================================== */
+
+/* Fondo de la sección de reserva */
+.reserva {
+    background-color: #e9ebed;
+}
+
+/* Contenedor del formulario */
+.reserva .formulario {
+    width: 70%;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 12px;
+}
+
+/* Apartados del formulario */
+.reserva fieldset {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    margin-bottom: 25px;
+    padding: 20px;
+}
+
+/* Títulos de los apartados */
+.reserva legend {
+    font-weight: bold;
+    color: forestgreen;
+    font-size: 19px;
+    padding: 0 10px;
+}
+
+/* Botones para enviar o borrar el formulario */
+.reserva input[type="submit"],
+.reserva input[type="reset"] {
+    padding: 12px 25px;
+    background-color: forestgreen;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    margin: 10px 5px;
+}
+
+/* Título principal de la página de reserva */
+#titolReserva {
+    font-size: 70px;
+    font-weight: normal;
+    color: black;
+    text-align: center;
+    margin: 20px 0 50px 0;
+}
+
+
+/* ==================================================
+   7. PIE DE PÁGINA
+   ================================================== */
+
+/* Contenedor del pie de página */
+#footer {
+    width: 85%;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+/* Párrafos del pie de página */
+#footer p {
+    margin: 0;
+    padding: 5px;
+}
+
+/* Separación de la imagen de Creative Commons */
+#imgFooter {
+    padding-left: 5px;
+}
+
+/* Enlaces del pie de página */
+#footer a {
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: aliceblue;
+    color: aliceblue;
+}
+
+
+/* Título principal de la página de reserva */
+#titolReserva {
+    font-size: 70px;
+    font-weight: normal;
+    color: black;
+    text-align: center;
+    margin: 20px 0 50px 0;
+}
+
+
+/* ==================================================
+   7. PIE DE PÁGINA
+   ================================================== */
+
+/* Contenedor del pie de página */
+#footer {
+    width: 85%;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+/* Párrafos del pie de página */
+#footer p {
+    margin: 0;
+    padding: 5px;
+}
+
+/* Separación de la imagen de Creative Commons */
+#imgFooter {
+    padding-left: 5px;
+}
+
+/* Enlaces del pie de página */
+#footer a {
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: aliceblue;
+    color: aliceblue;
+}
